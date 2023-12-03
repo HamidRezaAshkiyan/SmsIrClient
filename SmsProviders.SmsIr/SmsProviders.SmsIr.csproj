@@ -4,7 +4,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<PackageId>SmsProviders.SmsIr</PackageId>
 		<Version>1.0.0</Version>
-		<Description>A cross-platform library for the sms.ir provider, written in C#</Description>
+		<Description>A library for the sms.ir provider, written in C#</Description>
 		<PackageIcon>smsir-logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/HamidRezaAshkiyan/SmsIrClient</RepositoryUrl>
 	</PropertyGroup>
