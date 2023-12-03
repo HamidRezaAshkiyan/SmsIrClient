@@ -49,18 +49,14 @@ internal static class HttpRequestExtensions
         SmsIrResult baseResponse = await response.Content.ReadFromJsonAsync<SmsIrResult>();
         int statusCode = (int)response.StatusCode;
 
-        switch (statusCode)
+        throw statusCode switch
         {
-            case 401:
-                throw new UnauthorizedException(baseResponse.Status, baseResponse.Message);
-            case 400:
-                throw new LogicalException(baseResponse.Status, baseResponse.Message);
-            case 429:
-                throw new TooManyRequestException(baseResponse.Status, baseResponse.Message);
-            case 500:
-                throw new UnexpectedException(baseResponse.Status, baseResponse.Message);
-            default:
-                throw new InvalidOperationException($"something went wrong, httpStatus code: {response.StatusCode}, message: {response.RequestMessage}, please contact support team.");
-        }
+            401 => new UnauthorizedException(baseResponse.Status, baseResponse.Message),
+            400 => new LogicalException(baseResponse.Status, baseResponse.Message),
+            429 => new TooManyRequestException(baseResponse.Status, baseResponse.Message),
+            500 => new UnexpectedException(baseResponse.Status, baseResponse.Message),
+            _ => new InvalidOperationException(
+                $"something went wrong, httpStatus code: {response.StatusCode}, message: {response.RequestMessage}, please contact support team.")
+        };
     }
 }
