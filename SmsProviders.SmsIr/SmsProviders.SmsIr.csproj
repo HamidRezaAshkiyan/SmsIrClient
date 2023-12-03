@@ -3,6 +3,8 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<PackageId>SmsProviders.SmsIr</PackageId>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>1.0.0</Version>
 		<Description>A library for the sms.ir provider, written in C#</Description>
 		<PackageIcon>smsir-logo.png</PackageIcon>
@@ -10,9 +12,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="C:\Users\IPE\Desktop\smsir-logo.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
+	  <None Include="smsir-logo.png">
+		<Pack>True</Pack>
+		<PackagePath>\</PackagePath>
 	  </None>
 	</ItemGroup>
 
