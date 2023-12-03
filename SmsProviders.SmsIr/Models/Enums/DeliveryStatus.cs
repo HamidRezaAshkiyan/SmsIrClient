@@ -1,6 +1,6 @@
 namespace SmsProviders.SmsIr.Models.Enums;
 
-enum DeliveryStatus
+public enum DeliveryStatus
 {
     Delivered = 1, // رسیده به گوشی
     Undelivered = 2, // نرسیده به گوشی
