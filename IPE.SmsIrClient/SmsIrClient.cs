@@ -8,19 +8,13 @@ using SmsIrClient.Routes;
 
 namespace SmsIrClient;
 
-public class SmsIr
+public class SmsIrClient
 {
     private readonly HttpClient _httpClient;
-    private const string BaseAddress = "https://api.sms.ir/v1/";
 
-    public SmsIr(string apiKey)
+    public SmsIrClient(HttpClient httpClient)
     {
-        _httpClient = new HttpClient
-        {
-            BaseAddress = new Uri(BaseAddress)
-        };
-
-        _httpClient.DefaultRequestHeaders.Add("x-api-key", apiKey);
+        _httpClient = httpClient;
     }
 
     public async Task<SmsIrResult<decimal>> GetCreditAsync()
