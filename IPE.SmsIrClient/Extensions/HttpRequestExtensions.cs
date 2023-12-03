@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Net.Mime;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using SmsIrClient.Exceptions;
@@ -24,7 +26,7 @@ internal static class HttpRequestExtensions
     {
         string payload = JsonSerializer.Serialize(data);
 
-        StringContent httpContent = new(payload, System.Text.Encoding.UTF8, "application/json");
+        StringContent httpContent = new(payload, Encoding.UTF8, MediaTypeNames.Application.Json);
 
         HttpResponseMessage response = await httpClient.PostAsync(requestUri, httpContent);
 
