@@ -1,10 +1,9 @@
-﻿namespace IPE.SmsIrClient.Exceptions
+﻿namespace SmsIrClient.Exceptions;
+
+internal class TooManyRequestException : SmsIrException
 {
-    internal class TooManyRequestException : SmsIrException
+    internal TooManyRequestException(byte status, string message)
+        : base(status, message)
     {
-        internal TooManyRequestException(byte status, string message)
-            : base(status, message)
-        {
-        }
     }
 }

@@ -1,8 +1,7 @@
-﻿namespace IPE.SmsIrClient.Models.Results
+﻿namespace SmsIrClient.Models.Results;
+
+public class VerifySendResult
 {
-    public class VerifySendResult
-    {
-        public int MessageId { get; set; }
-        public decimal Cost { get; set; }
-    }
+    public int MessageId { get; set; }
+    public decimal Cost { get; set; }
 }

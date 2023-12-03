@@ -1,7 +1,6 @@
-﻿namespace IPE.SmsIrClient.Routes
+﻿namespace SmsIrClient.Routes;
+
+internal static class LineRoutes
 {
-    internal static class LineRoutes
-    {
-        internal static string GetLinesRoute() => "line";
-    }
+    internal static string GetLinesRoute() => "line";
 }

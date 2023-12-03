@@ -1,8 +1,7 @@
-﻿namespace IPE.SmsIrClient.Models.Results
+﻿namespace SmsIrClient.Models.Results;
+
+public class RemoveScheduledMessagesResult
 {
-    public class RemoveScheduledMessagesResult
-    {
-        public decimal ReturnedCreditCount { get; set; }
-        public int SmsCount { get; set; }
-    }
+    public decimal ReturnedCreditCount { get; set; }
+    public int SmsCount { get; set; }
 }

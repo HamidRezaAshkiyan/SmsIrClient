@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 		<PackageId>IPE.SmsIr</PackageId>
 		<Version>1.0.5</Version>
 		<Authors>IPDev</Authors>
@@ -13,6 +13,9 @@
 		<PackageTags>sms, sms.ir, smsir,send sms, dotnet sms, c# sms, send message, message, receive message, receive</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://sms.ir/</PackageProjectUrl>
+		<AssemblyName>SmsIrClient</AssemblyName>
+		<RootNamespace>SmsIrClient</RootNamespace>
+		<LangVersion>default</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
