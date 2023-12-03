@@ -10,7 +10,7 @@ internal static class ReceiveRoutes
 
     internal static string GetArchivedReceivesRoute(int pageNumber, int pageSize, int? fromDate, int? toDate)
     {
-        StringBuilder uriBuilder = new StringBuilder($"receive/archive?pageNumber={pageNumber}&pageSize={pageSize}");
+        StringBuilder uriBuilder = new($"receive/archive?pageNumber={pageNumber}&pageSize={pageSize}");
 
         if (fromDate.HasValue)
             uriBuilder.Append($"&fromDate={fromDate}");

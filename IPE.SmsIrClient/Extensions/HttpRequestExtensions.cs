@@ -24,7 +24,7 @@ internal static class HttpRequestExtensions
     {
         string payload = JsonSerializer.Serialize(data);
 
-        StringContent httpContent = new StringContent(payload, System.Text.Encoding.UTF8, "application/json");
+        StringContent httpContent = new(payload, System.Text.Encoding.UTF8, "application/json");
 
         HttpResponseMessage response = await httpClient.PostAsync(requestUri, httpContent);
 

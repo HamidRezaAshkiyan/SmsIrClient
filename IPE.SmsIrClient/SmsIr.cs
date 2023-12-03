@@ -65,7 +65,7 @@ public class SmsIr
 
     public async Task<SmsIrResult<SendResult>> BulkSendAsync(long lineNumber, string messageText, string[] mobiles, int? sendDateTime = null)
     {
-        BulkSendRequest bulkSendRequest = new BulkSendRequest(lineNumber, messageText, mobiles, sendDateTime);
+        BulkSendRequest bulkSendRequest = new(lineNumber, messageText, mobiles, sendDateTime);
 
         return await _httpClient.PostRequestAsync<SendResult>(SendRoutes.BulkSendRoute(), bulkSendRequest);
     }
@@ -75,7 +75,7 @@ public class SmsIr
 
     public async Task<SmsIrResult<SendResult>> LikeToLikeSendAsync(long lineNumber, string[] messageTexts, string[] mobiles, int? sendDateTime = null)
     {
-        LikeToLikeSendRequest likeToLikeSendRequest = new LikeToLikeSendRequest(lineNumber, messageTexts, mobiles, sendDateTime);
+        LikeToLikeSendRequest likeToLikeSendRequest = new(lineNumber, messageTexts, mobiles, sendDateTime);
 
         return await _httpClient.PostRequestAsync<SendResult>(SendRoutes.LikeToLikeSendRoute(), likeToLikeSendRequest);
     }
@@ -93,7 +93,7 @@ public class SmsIr
 
     public async Task<SmsIrResult<VerifySendResult>> VerifySendAsync(string mobile, int templateId, VerifySendParameter[] parameters)
     {
-        VerifySendRequest verifySendRequest = new VerifySendRequest(mobile, templateId, parameters);
+        VerifySendRequest verifySendRequest = new(mobile, templateId, parameters);
 
         return await _httpClient.PostRequestAsync<VerifySendResult>(SendRoutes.VerifySendRoute(), verifySendRequest);
     }
