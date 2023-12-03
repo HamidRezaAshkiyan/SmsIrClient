@@ -5,10 +5,11 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using SmsIrClient.Exceptions;
-using SmsIrClient.Models.Results;
 
-namespace SmsIrClient.Extensions;
+using SmsProviders.SmsIr.Exceptions;
+using SmsProviders.SmsIr.Models.Results;
+
+namespace SmsProviders.SmsIr.Extensions;
 
 internal static class HttpRequestExtensions
 {

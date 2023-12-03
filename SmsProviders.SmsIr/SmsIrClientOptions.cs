@@ -1,4 +1,4 @@
-namespace SmsIrClient;
+namespace SmsProviders.SmsIr;
 
 public sealed class SmsIrClientOptions
 {

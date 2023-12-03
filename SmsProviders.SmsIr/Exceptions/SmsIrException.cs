@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SmsIrClient.Exceptions;
+namespace SmsProviders.SmsIr.Exceptions;
 
 internal class SmsIrException : Exception
 {

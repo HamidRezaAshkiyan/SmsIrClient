@@ -1,4 +1,4 @@
-﻿namespace SmsIrClient.Models.Requests;
+﻿namespace SmsProviders.SmsIr.Models.Requests;
 
 public class VerifySendParameter
 {

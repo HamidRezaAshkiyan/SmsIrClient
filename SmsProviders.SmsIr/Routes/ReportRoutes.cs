@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace SmsIrClient.Routes;
+namespace SmsProviders.SmsIr.Routes;
 
 internal static class ReportRoutes
 {

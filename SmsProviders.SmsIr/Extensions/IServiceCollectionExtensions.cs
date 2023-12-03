@@ -3,7 +3,7 @@ using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SmsIrClient.Extensions;
+namespace SmsProviders.SmsIr.Extensions;
 
 public static partial class IServiceCollectionExtensions
 {

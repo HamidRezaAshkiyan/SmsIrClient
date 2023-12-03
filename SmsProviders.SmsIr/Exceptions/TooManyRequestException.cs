@@ -1,4 +1,4 @@
-﻿namespace SmsIrClient.Exceptions;
+﻿namespace SmsProviders.SmsIr.Exceptions;
 
 internal class TooManyRequestException : SmsIrException
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SmsIrClient.Models.Results;
+namespace SmsProviders.SmsIr.Models.Results;
 
 public class PackResult
 {

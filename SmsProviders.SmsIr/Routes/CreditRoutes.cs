@@ -1,4 +1,4 @@
-﻿namespace SmsIrClient.Routes;
+﻿namespace SmsProviders.SmsIr.Routes;
 
 internal static class CreditRoutes
 {

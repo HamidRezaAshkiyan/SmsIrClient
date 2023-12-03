@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using SmsIrClient.Extensions;
-using SmsIrClient.Models.Requests;
-using SmsIrClient.Models.Results;
-using SmsIrClient.Routes;
 
-namespace SmsIrClient;
+using SmsProviders.SmsIr.Extensions;
+using SmsProviders.SmsIr.Models.Requests;
+using SmsProviders.SmsIr.Models.Results;
+using SmsProviders.SmsIr.Routes;
+
+namespace SmsProviders.SmsIr;
 
 public class SmsIrClient
 {
