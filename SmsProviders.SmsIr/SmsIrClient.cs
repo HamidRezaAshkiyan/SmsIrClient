@@ -14,9 +14,7 @@ public class SmsIrClient
     private readonly HttpClient _httpClient;
 
     public SmsIrClient(HttpClient httpClient)
-    {
-        _httpClient = httpClient;
-    }
+        => _httpClient = httpClient;
 
     public async Task<SmsIrResult<decimal>> GetCreditAsync()
     {
