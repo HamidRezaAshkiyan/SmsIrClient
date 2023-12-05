@@ -1,6 +1,6 @@
 namespace SmsProviders.SmsIr;
 
-public sealed class SmsIrClientOptions
+public class SmsIrClientOptions
 {
     public const string ConfigurationSection =
         nameof(SmsIrClientOptions);
